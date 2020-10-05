@@ -6,6 +6,7 @@
 const accessingAnItem = () => {
   const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
   // Write code here
+  return cars[0];
 };
 
 /**
@@ -18,6 +19,9 @@ const addToAnArray = () => {
   const languages = ["JavaScript"]; // Do not change this line
 
   /* Add three more items to the "languages" array here */
+languages.push("Python");
+languages.push("Java");
+languages.push("PHP");
 
   return languages;
 };
@@ -30,7 +34,10 @@ const addToAnArray = () => {
  * @example combineArray(['Japan','China','India'], ['USA','UK']) // ['Japan','China','India','USA','UK']
  **/
 
-const combineArray = (array1, array2) => {};
+const combineArray = (array1, array2) => {
+
+  return array1.concat(array2);
+};
 
 /***
  * Create an array that contain two functions:
@@ -42,7 +49,16 @@ const combineArray = (array1, array2) => {};
  * @example createArrayOfFunctions()[1](10, 10) // 0;
  */
 
-const createArrayOfFunctions = () => {};
+const createArrayOfFunctions = () => {
+
+  const firstFunction = (x, y) => {
+    return x + y;
+  };
+  const secondFunction = (x, y) => {
+    return x - y;
+  };
+  return [firstFunction, secondFunction];
+};
 
 /**
  * Loop through the array using a for loop (or for ... of loop) and return the highest number
@@ -53,7 +69,16 @@ const createArrayOfFunctions = () => {};
  * @example highestNumber([-1, -5, -4]) // -1
  *
  **/
-const highestNumber = (numbers) => {};
+const highestNumber = (numbers) => {
+
+let maxNumber = -10000000;
+for (let index = 0; index < numbers.length; index++) {
+  if (numbers[index] > maxNumber) {
+    maxNumber = numbers[index];
+  }
+}
+return maxNumber;  
+};
 
 /**
  * Given an array of objects, where each object has an ID,
