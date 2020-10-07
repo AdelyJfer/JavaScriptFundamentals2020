@@ -14,7 +14,12 @@
  *
  * (This is technically not a closure. It is here to prepare you for the next problems.)
  */
-const greeter = () => {};
+const greeter = () => {
+  const hello = (name) => {
+    return "Hello " + name.toString() + "!"
+  };
+  return { hello };
+};
 
 /**
  * As a programmer, I would like to be able to call on a function that returns an object that will allow me to
