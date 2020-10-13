@@ -54,6 +54,18 @@ const greeter = () => {
 
 const groceryList = () => {
   let groceryItems = [];
+  const add = (item) => {
+    groceryItems.push(item);
+  };
+  const remove = (number) => {
+    groceryItems.splice(number, 1);
+  };
+  const getList = () => {
+    return groceryItems;
+  };
+  return { add, remove, getList };
+  
+
 };
 
 /**
@@ -66,6 +78,7 @@ const calculator = () => {
    * Create a private variable called "sum"
    * @var {number}
    */
+  var sum = 0;
   /**
    * Return an object that has two methods:
    *
@@ -77,6 +90,15 @@ const calculator = () => {
    * that should return the value of "sum" above.
    * @returns {number} the value of sum
    */
+
+  const setter = (number) => {
+    sum += number;
+  }
+  const getter = () => {
+    return sum;
+  }
+  return { setter, getter };
+
 };
 
 /**
@@ -105,7 +127,9 @@ const calculator = () => {
  * guessRound2(1); // "No more guesses. The answer was 0"
  */
 
-const guessingGame = (numberOfRounds) => {};
+const guessingGame = (numberOfRounds) => {
+
+};
 
 module.exports = {
   greeter,
