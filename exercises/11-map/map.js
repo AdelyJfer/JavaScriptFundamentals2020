@@ -5,14 +5,25 @@
  * @param {function} callback
  * @returns {array} new array
  */
-const map = (arr, callback) => {};
+const map = (arr, callback) => {
+
+let newArr = arr.map(callback);
+return newArr;
+ 
+};
 
 /**
  * Multiplies each value in an array by two
  * @param {array} arr an array of numbers e.g. [1, 3, 5]
  * @returns {array} new array, with each value doubled e.g. [2, 5, 10]
  */
-const doubleValues = (arr) => {};
+const doubleValues = (arr) => {
+
+  arr.map ((arr) => {
+    return arr * 2;
+  });
+  
+};
 
 /**
  * Given an array nested with objects
@@ -32,7 +43,17 @@ const doubleValues = (arr) => {};
  * ];
  * extractKey(arrayOfNames, 'name'); // ['Ellie', 'Tim', 'Matt', 'Colt']
  */
-const extractKey = (arr, key) => {};
+const extractKey = (arr, key) => {
+
+  let newArr = arr.map((item) => {
+    if (key == "name") {
+      return item.name;
+    } else {
+      return item.age;
+    }
+  });
+  return newArr;
+};
 
 module.exports = {
   map,
