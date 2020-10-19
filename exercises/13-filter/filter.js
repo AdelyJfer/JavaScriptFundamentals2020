@@ -5,7 +5,9 @@
  * @param {function} callback
  * @returns {mixed} a array of values with the values with some of the values removed
  */
-const filter = (arr, callback) => {};
+const filter = (arr, callback) => {
+   return arr.filter(callback);
+};
 
 /**
  * Delete the matching user from an array of user objects
@@ -26,7 +28,11 @@ const filter = (arr, callback) => {};
  * findUser(users, 1025);
  * // [{ id: 1024, username:"smile134", email: "smile134@example.com" }]
  */
-const deleteUser = (arr, id) => {};
+const deleteUser = (arr, id) => {
+
+     let nuevo = arr.filter((user) => user.id != id);
+     return nuevo;
+};
 
 module.exports = {
   filter,
