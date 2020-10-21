@@ -1,4 +1,4 @@
-/***
+/***HW2
  * Change below so that it will also compare data types
  *
  *
