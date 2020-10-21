@@ -1,4 +1,4 @@
-/**
+/**HW4
  *  Return the first item in an array of cars
  *  @return {string} BMW
  */
