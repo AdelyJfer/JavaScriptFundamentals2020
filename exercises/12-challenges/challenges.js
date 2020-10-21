@@ -1,4 +1,4 @@
-/**
+/**HW12
  * Return the length of the longest word in the provided sentence.
  *
  * @param {array} arr
