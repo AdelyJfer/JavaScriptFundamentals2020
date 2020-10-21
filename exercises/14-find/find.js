@@ -1,4 +1,4 @@
-/**
+/**hw14
  * Build your own find function
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
  * @param {array} arr
