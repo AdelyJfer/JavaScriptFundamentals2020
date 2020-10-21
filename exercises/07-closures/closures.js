@@ -1,4 +1,4 @@
-/**
+/**HW7
  * This function should return an object with the property "hello".
  * "hello" should be a method (or function) that accepts a string "name" as an argument
  * and returns the string "Hello _____!"
