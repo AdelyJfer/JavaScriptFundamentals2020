@@ -1,4 +1,4 @@
-/**
+/**HW11
  * Recreate the map function
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  * @param {array} arr
