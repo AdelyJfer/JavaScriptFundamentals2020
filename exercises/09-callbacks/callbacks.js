@@ -1,4 +1,4 @@
-/**
+/**HW9
  * Perform a calculation on a number.
  * @param {number} num1 number
  * @param {number} num2 number
